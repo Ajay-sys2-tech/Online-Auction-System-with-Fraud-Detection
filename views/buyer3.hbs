@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer</title>
+    <link rel="icon" href="favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="/css/buyer.css">
+    {{!-- <script src="scripts/buyer.js" defer></script> --}}
+</head>
+<body>
+    <main>
+        <header>
+            <nav class="navbar">
+                <div class="brand-title">
+                    <a href="index.html">
+                        {{!-- <img src="images/logo.png" alt="" height="50px"> --}}
+                    </a>
+                </div>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="#">Your Bids</a></li>
+                        <li><a href="#">Cancel Bid</a></li>
+                        <li><a href="#">Edit Profile</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a class="credentials" href="/">Sign Out</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="box">
+            <h1 class="heading">Current Running Auctions   
+                                          {{profile}}
+                                        </h1>
+                <div class="numbering">
+                    {{#each userData}}
+                <div class="image">
+                <img src="http://localhost:5000/images/upload_images/{{this.image}}" alt="error" width="450px" height="300px"> <br>
+                </div>
+               <div class="desc">
+                   <h1> {{this.name}} </h1>
+                
+                 Price: Rs. {{this.price}} 
+                <h5>Description: </h5>
+                {{this.description}} Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae a amet sunt alias quidem veritatis fuga ex unde, quaerat accusamus tenetur blanditiis ea quasi modi et non ullam porro earum?
+                <form action="/auth/addtocart" method="post">
+                    <input type="text" name="bid" id="" placeholder="enter Bid amount" required>
+                    <br>Enter your email to confirm bid : <br>
+                    <input type="email" name="email" id="" placeholder="enter your email" required>
+                    <input type="hidden" name="pid" value=" {{this.sno}} ">
+                    <button type="submit">Bid Product</button>
+                </form>
+
+               </div>
+        
+        {{/each}}
+            </div>
+        </div>
+    </main>
+</body>
+</html>

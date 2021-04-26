@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" href="favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="/css/signup.css">
+</head>
+<body>
+    <div class="whole_page">
+        <div class="box_1">
+            <div class="box_2">
+                <div class="box_3">
+                    <div class="box_4">
+                        <h1 style="margin-bottom: 30px; margin-top: 30px;  font-family:cursive; color: rgba(114, 209, 114, 0.74); text-shadow: green 2px 2px ;">Create Account</h1>
+                        <br>
+                        <form action="/auth/signup" method="POST">
+                            <div>
+                                <b>Create Account As :</b>
+                                <input type="radio" name="user" id="" value="buyer" required>Buyer
+                                <input type="radio" name="user" id="" value="seller" required>Seller
+                            </div>
+                            <br>
+                            <div class="details_assign">
+                                <b>Enter Your Name</b>
+                                <input class="push_right_float_1" style="padding: 2px;" type="text" name="name" placeholder="First and last name" id="" required>
+                            </div>
+                            <br><br>
+                            <div class="details_assign">
+                                <b>
+                                    Enter Your Email id
+                                </b>
+                                <input class="push_right_float_2" style="padding: 2px;" type="email" name="email" id="" placeholder="example@domain.com" required>
+                            </div>
+                            <br><br>
+                            <div class="details_assign">
+                                <b>
+                                    Create a Username
+                                </b>
+                                <input class="push_right_float_3" style="padding: 2px;" type="text" name="username"  placeholder="username" required>
+                            </div>
+                            <br><br>
+                            <div class="details_assign">
+                                <b>
+                                    Enter Your Password
+                                </b>
+                                <input class="push_right_float_4" style="padding: 2px;" type="password" name="password" minlength="6" id="" placeholder="********" required>
+                            </div>
+                            <br><br>
+                            <div class="details_assign">
+                                <b>
+                                    Re-Enter Your Password
+                                </b>
+                                <input class="push_right_float_5" style="padding: 2px;" type="password" name="password2" id="" placeholder="********" required>
+                            </div>
+                            <br><br>
+                            <div class="details_assign">
+                                <b>
+                                    Phone Number
+                                </b>
+                                <input class="push_right_float_6" style="padding: 2px;" type="text" name="phone" maxlength="10" placeholder="Phone number" required>
+                            </div>
+                            <br><br>
+                            <div class="details_assign">
+                               <b>
+                                    ID Proof no.
+                                </b>
+                                <input class="push_right_float_6" style="padding: 2px; margin-left: 115px;" type="text" name="id" placeholder="ID Proof no." required>
+                            </div>
+                            <br><br>
+                            <button class="button_submit" style=" width: 90%; height: 30px;" name="submitt">
+                                Submit Details
+                            </button>
+                        </form>
+
+                    </div>
+                     {{#if message }}
+            <h4 >{{message}}</h4>
+            {{/if}}
+                </div>
+            </div>
+           
+        </div>  
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,294 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(91,200,191);
+background: linear-gradient(90deg, rgba(91,200,191,1) 28%, rgba(134,134,201,1) 68%, rgba(0,212,255,1) 100%);
+}
+.container{
+    padding: 65px 480px;
+}
+.divide-blocks{
+    background-color: rgba(238, 220, 220, 0.39);
+    height: 100%;
+    border-radius: 100px;
+}
+.welcome-back{
+    font-size: 250%;
+   margin-top: 0px;
+    margin-bottom: 20px;
+    padding: 30px 0px 0px;
+}
+p{
+    margin-top: 0%;
+    margin-bottom: 25%;
+    font-size: 20px;
+    padding: 0px 0px 30px;
+}
+.right-side-login{
+    text-align: center;
+}
+.validate-form-blocks{
+    padding: 20px -35px;
+    border-radius: 20px;
+    margin-top: -10px;
+}
+.validate-form{
+    top: 50px;
+    height: 100%;
+    padding-top: 10%;
+    padding:20px;
+}
+.login-to-continue{
+    color: rgba(79, 51, 180, 0.555);
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: -150px;
+    margin-bottom: 5px;
+    padding-top :10px;
+}
+
+.validate-form-blocks-1{
+    background-color:transparent;
+    margin: 0px 5px;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.validate-form-blocks-2{
+    background-color:transparent;
+    margin: 0px 5px;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.validate-form-blocks-3{
+    background-color:transparent;
+    font-size: 20px;
+    margin: 0px 5px;
+    padding: 10px 0px;
+}
+.validate-form-blocks-4{
+    background-color: transparent;
+    margin: 0px 5px;
+    padding: 10px 0px;
+    margin-bottom: 50px;
+}
+.emaillll{
+    margin-top: 10px;
+    padding: 10px;
+    height: 30px;
+    width: 300px;
+    font-size: 15px;
+    border-radius: 20px;
+}
+.emaillll:hover{
+    background-color: white;
+}
+.emaillll:hover{
+    transition: 0.5s;
+    box-shadow: chartreuse 10px 10px 10px, chartreuse -10px -10px 10px,chartreuse -10px 10px 10px, chartreuse 10px -10px 10px ;
+}
+.passwordddd{
+    margin-top: 10px;
+    padding: 10px;
+    height: 30px;
+    width: 300px;
+    font-size: 15px;
+    border-radius: 20px;
+}
+.passwordddd:hover{
+    background-color: white;
+}
+.passwordddd:hover{
+    transition: 0.5s;
+    box-shadow: chartreuse 10px 10px 10px, chartreuse -10px -10px 10px,chartreuse -10px 10px 10px, chartreuse 10px -10px 10px ;
+}
+.submitt-button{
+    background-color: rgba(91,200,191,1);
+    color: white;
+    margin-top: 10px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    
+}
+.submitt-button:hover{
+    transition: .5s;
+    transform:translate(-5px,-5px);
+    box-shadow: rgb(56, 133, 126) 20px 20px 20px;
+}
+.submitt-button:active{
+    background-color:fuchsia;
+}
+.validate-form-blocks-5{
+    background: mintcream;
+    display:inline;
+    padding: 5px 10px;
+    margin: 3px 0px;
+    border-radius: 20pc;
+    font-style: italic;
+}
+@media(max-width: 1250px) {
+    
+    .left-side-welcome
+    {
+        display: none; 
+    }
+    .divide-blocks
+    {
+        
+        grid-template-columns: 100%;
+    }
+}
+/*
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(91,200,191);
+background: linear-gradient(90deg, rgba(91,200,191,1) 28%, rgba(134,134,201,1) 68%, rgba(0,212,255,1) 100%);
+}
+.container{
+    padding: 100px 300px;
+}
+.divide-blocks{
+background: rgb(132,220,155);
+background: linear-gradient(90deg, rgba(132,220,155,1) 30%, rgba(49,194,87,1) 49%, rgba(0,0,0,1) 50%, rgba(45,253,173,1) 51%, rgba(45,253,173,0.8802871490393032) 70%);
+    height: 100%;
+    display:grid;
+    border-radius: 100px;
+    grid-template-columns: 100%;
+    
+}
+.left-side-welcome{
+    text-align: center;
+    padding: 20px;
+}
+.welcome-back{
+    font-size: 250%;
+    margin-top: 25%;
+    margin-bottom: 15%;
+}
+p{
+    margin-top: 0%;
+    margin-bottom: 25%;
+    font-size: 20px;
+}
+.right-side-login{
+    text-align: center;
+}
+.validate-form-blocks{
+    background-color: transparent;
+    padding: 20px 0px;
+    border-radius: 20px;
+}
+.validate-form{
+    top: 50px;
+    height: 100%;
+    padding-top: 10%;
+    padding:20px;
+}
+.login-to-continue{
+    color: White;
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top :10px;
+}
+
+.validate-form-blocks-1{
+    background-color:transparent;
+    margin: 0px 5px;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.validate-form-blocks-2{
+    background-color:transparent;
+    margin: 0px 5px;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.validate-form-blocks-3{
+    background-color:transparent;
+    font-size: 20px;
+    margin: 0px 5px;
+    padding: 10px 0px;
+}
+.validate-form-blocks-4{
+    background-color: transparent;
+    margin: 0px 5px;
+    padding: 10px 0px;
+    margin-bottom: 50px;
+}
+.emaillll{
+    margin-top: 10px;
+    padding: 10px;
+    height: 30px;
+    width: 300px;
+    font-size: 15px;
+    border-radius: 20px;
+}
+.emaillll:hover{
+    background-color: white;
+}
+.emaillll:hover{
+    transition: 0.5s;
+    box-shadow: chartreuse 10px 10px 10px, chartreuse -10px -10px 10px,chartreuse -10px 10px 10px, chartreuse 10px -10px 10px ;
+}
+.passwordddd{
+    margin-top: 10px;
+    padding: 10px;
+    height: 30px;
+    width: 300px;
+    font-size: 15px;
+    border-radius: 20px;
+}
+.passwordddd:hover{
+    background-color: white;
+}
+.passwordddd:hover{
+    transition: 0.5s;
+    box-shadow: chartreuse 10px 10px 10px, chartreuse -10px -10px 10px,chartreuse -10px 10px 10px, chartreuse 10px -10px 10px ;
+}
+.submitt-button{
+    background-color: darkred;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.submitt-button:hover{
+    transition: .5s;
+    transform:translate(-5px,-5px);
+    box-shadow: brown 20px 20px 20px;
+}
+.submitt-button:active{
+    background-color:fuchsia;
+}
+.validate-form-blocks-5{
+    background: mintcream;
+    display:inline;
+    padding: 5px 10px;
+    margin: 3px 0px;
+    border-radius: 20pc;
+    font-style: italic;
+}
+@media(max-width: 1250px) {
+    
+    .left-side-welcome
+    {
+        display: none; 
+    }
+    .divide-blocks
+    {
+        
+        grid-template-columns: 100%;
+    }
+}
+
+*/
