@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud detector</title>
+    <link rel="icon" href="favicon/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    
+</head>
+
+<body style="margin: 0%; padding: 0px 20px; background: rgb(91,200,191); background: linear-gradient(90deg, rgba(91,200,191,1) 28%, rgba(134,134,201,1) 68%, rgba(0,212,255,1) 100%);">
+    <div class="container" style="padding: 0px 30px; background-color: transparent;">
+        <div class="text" style="text-align: center;">
+            <h1 style="padding-bottom: 0px; font-size: 55px; font-family: 'Press Start 2P', cursive; font-family: 'Zen Dots', cursive;">
+                Fraud Result Found
+            </h1>
+            <h3 style="text-transform: capitalize; color: rgb(35, 18, 134); font-size: 50px;">Bidder_ID:</h3>
+            <div style="font-size: 30px;">{{ Bidder_ID }}</div>
+            <h3 style=" text-transform: capitalize; color: rgb(35, 18, 134); font-size: 50px;">Status:</h3>
+            <div style=" transition: 1s; font-size: 50px; ">The bidder is: <strong>{{ predicted_status }}</strong>.</div>
+            <h2><strong>Primary Details of Bidder:</strong></h2>
+            <div style="margin-left: 45%">
+            	
+            	<font align=left>
+            	
+            	<ul style=" transition: 1s; font-size: 20px; ">
+            	<li/>Bidder Tendency: {{ Bidder_Tendency }}
+            	<li/>Bidding Ratio: {{ Bidding_Ratio }}
+            	<li/>Successive Outbidding: {{ Successive_Outbidding }}
+            	<li/>Last bidding: {{ Last_Bidding }}
+            	<li/>Winning Ratio: {{ Winning_Ratio }}
+            	</ul>
+            	</font>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
