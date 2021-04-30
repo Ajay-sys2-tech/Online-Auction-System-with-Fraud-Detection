@@ -1,2 +1,2 @@
 # Online-Auction-System-with-Fraud-Detection
-Project
+An auction system equipped with fraud detection
